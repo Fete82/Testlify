@@ -7,10 +7,6 @@ body {
     
 }
 
-h1 {
-    padding-left: 25px;
-}
-
 
 /*webaim contrast checker  */
 p {
@@ -42,26 +38,34 @@ a:hover {
 
 .container {
     background-color: rgb(230, 230, 230);
-    max-width: 1100px;
+    max-width: 1082px;
     margin: auto;
     display: grid;
     grid-template-columns: 200px 5fr 200px;
-    grid-template-rows: 120px 100px 3fr 200px;
-    opacity: 90%;
+    grid-template-rows: 150px 100px 3fr 200px;
+    /*OPACITY against background*/
+    opacity: 91%;
 }
 
-
 .head {
-    color: rgb(247, 247, 247);
+    display: flex;
+    color: rgb(236, 236, 236);
+    background-image: url("stonks02.jpg");
     background-color: rgb(70, 70, 70);
-    padding: 1em 1em;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    /* KANSKE INTE JÄTTESNYGGT */
-    border-bottom: 3px solid rgb(216, 203, 58);
+    
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 3em;
+        padding-right: 3em;
+
+    text-shadow: 1px 2px 1px rgb(54, 54, 54);
+    text-align: left;
 }
+
 
 .navigation {
     /* does not work */
@@ -70,10 +74,6 @@ a:hover {
     grid-row-start: 2;
     grid-row-end: 3;
     padding-left: 25%;
-}
-
-.item {
-    border-bottom: 2px solid rgb(197, 197, 197);
 }
 
 /* nav bar will move to top when scaled down heavily */
@@ -103,16 +103,41 @@ a:hover {
         font-size: 100%;
         padding-bottom: 0px;
     }
+}
 
+/*Right menu - Author information */
 
+.rightmenu {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 15px;
+}
 
+.rightmenu > h3 {
+    font-size: 14px;
+}
+.rightmenu > p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.face {
+    border: 2px solid rgb(190, 190, 190);
+    filter: grayscale(100%) contrast(120%);
+    border-radius: 4em;
 }
 
 
 
 
-
-
+@media screen and (max-width: 640px) {
+    .rightmenu {
+        display: none;
+    }
+}
 
 /* ARTICLES */
 
@@ -126,12 +151,11 @@ a:hover {
     background-color: rgb(247, 247, 247);
     text-align: justify;
     display: grid;
-    padding: 20px;
+    padding-left: 20px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-    border-bottom: 1px solid black;
 }
 
 
