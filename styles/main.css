@@ -44,7 +44,11 @@ a:hover {
     grid-template-columns: 200px 5fr 200px;
     grid-template-rows: 150px 100px 3fr 200px;
     /*OPACITY against background*/
-    opacity: 91%;
+    opacity: 90%;
+}
+
+img {
+    opacity: 100%;
 }
 
 .head {
